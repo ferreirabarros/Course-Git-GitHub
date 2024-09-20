@@ -18,9 +18,9 @@ git commit -m "<comentario do commit>" => salvar versão/alteração/estagio dos
  
 git clone <ssh no projeto> => clona o projeto do github
 
-git push => sobe/empurra alteração/versão/estagios para o github
+git push => sobe alteração/versão/estagios para o github
 
-git pull => desço/pego/baixo/puxa arquivos que eu não tenho do projeto no github para minha maquina
+git pull => desço/pego/baixo arquivos que eu não tenho do projeto no github para minha maquina
 
 (Processo de add projeto local no repositorio vazio do github)
 	
@@ -31,6 +31,7 @@ git pull => desço/pego/baixo/puxa arquivos que eu não tenho do projeto no gith
 	git remote add origin <ssh do projeto> => add uma origem remota (que é o projeto no github)
 
 	git push -u main => sobe alteração/versão/estagios  para a branch main (precisa indicar a branch pelo menos na primeira vez)
+	(se a branch escrita não existir no repositorio github entçao ela será criada)
 
 git branch => Mostra as branch o git
 
@@ -44,7 +45,8 @@ git checkout -b <nome da brach> => Cria a nova branch e vai para ela
 
 git merge <nome da branch com as alterações> => margeia/uni/mistura/mescla com a branch principal (deve ser chamda este comando apartir na chanch principal)
 
-<<<<<<< HEAD
+git push -u origin <nome branch> => cria nova bransh no github e empurra/sobe as alterçoes para ela 
+
 git rm <nome do arquivo> => remove/deleta arquivos que ja foram rastrados (git add )
 
 git mv <nome do arquivo> <diretorio/nome do arquivo> => move o arquivo 
@@ -59,9 +61,9 @@ git config --global user.name "<seu nome>" => configura seu nome o terminal
 git confg --global user.email "<seu email>" => configuta seu email o terminal
 
 
-=======
-git push -u origin <nome branch> => cria nova bransh no github e empurra/sobe as alterçoes para ela 
->>>>>>> 95f54ba72dd4df5549ed9d6aef23792441b17588
+
+
+
 
 
 
