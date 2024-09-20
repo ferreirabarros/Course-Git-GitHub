@@ -31,6 +31,7 @@ git pull => desço/pego/baixo arquivos que eu não tenho do projeto no github pa
 	git remote add origin <ssh do projeto> => add uma origem remota (que é o projeto no github)
 
 	git push -u main => sobe alteração/versão/estagios  para a branch main (precisa indicar a branch pelo menos na primeira vez)
+	(se a branch escrita não existir no repositorio github entçao ela será criada)
 
 git branch => Mostra as branch o git
 
