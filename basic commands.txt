@@ -45,6 +45,18 @@ git checkout -b <nome da brach> => Cria a nova branch e vai para ela
 
 git merge <nome da branch com as alterações> => margeia/uni/mistura/mescla com a branch principal (deve ser chamda este comando apartir na chanch principal)
 
+git rm <nome do arquivo> => remove/deleta arquivos que ja foram rastrados (git add )
+
+git mv <nome do arquivo> <diretorio/nome do arquivo> => move o arquivo 
+
+git checkout <nome do arquivo> => descarta as alterações dos arquivos não rastreados(git add)
+
+git log <nome do arquivo> => visualizar commits no terminal.
+(letra "q" para sair)
+
+git config --global user.name "<seu nome>" => configura seu nome o terminal
+
+git confg --global user.email "<seu email>" => configuta seu email o terminal
 
 
 
