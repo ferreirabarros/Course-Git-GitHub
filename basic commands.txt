@@ -54,7 +54,11 @@ git checkout <nome do arquivo> => descarta as alterações dos arquivos não ras
 git log <nome do arquivo> => visualizar commits no terminal.
 (letra "q" para sair)
 
- 
+git config --global user.name "<seu nome>" => configura seu nome o terminal
+
+git confg --global user.email "<seu email>" => configuta seu email o terminal
+
+
 
 
 
