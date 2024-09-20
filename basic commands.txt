@@ -1,0 +1,18 @@
+cd  ./ <caminho da pasta> => Mudar o local do diretorio atual
+
+ls => listar os arquivos da pasta atual
+
+ls -al => lista arquivos acultos
+
+clear => Limpar terminal
+
+git init => iniciaziar na pasta atual
+
+git status => ver status do git na pasta atual
+
+git add . => add todos os arquivos ao ratreamento 
+
+git add <nome do arquivo> => add este arquivo ao rastreamento
+
+git commit -m "<comentario do commit>" => salvar versão/alteração/estagio dos arquivos rastreados
+ 
