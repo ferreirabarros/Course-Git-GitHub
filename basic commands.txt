@@ -32,3 +32,22 @@ git pull => desço/pego/baixo arquivos que eu não tenho do projeto no github pa
 
 	git push -u main => sobe alteração/versão/estagios  para a branch main (precisa indicar a branch pelo menos na primeira vez)
 
+git branch => Mostra as branch o git
+
+git branch <nome da nova branch> => Cria uma nova branch
+
+git checkout <nome da branch> => Sai de uma branch para outra
+
+git branch -d <nome da branch> => Deleta a branch
+
+git checkout -b <nome da brach> => Cria a nova branch e vai para ela
+
+git merge <nome da branch com as alterações> => margeia/uni/mistura/mescla com a branch principal (deve ser chamda este comando apartir na chanch principal)
+
+
+
+
+
+
+
+
