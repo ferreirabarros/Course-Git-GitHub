@@ -1,4 +1,4 @@
-cd  ./ <caminho da pasta> => Mudar o local do diretorio atual
+cd ./ <caminho da pasta> => Mudar o local do diretorio atual
 
 ls => listar os arquivos da pasta atual
 
@@ -43,7 +43,6 @@ git branch -d <nome da branch> => Deleta a branch
 git checkout -b <nome da brach> => Cria a nova branch e vai para ela
 
 git merge <nome da branch com as alterações> => margeia/uni/mistura/mescla com a branch principal (deve ser chamda este comando apartir na chanch principal)
-
 
 
 
