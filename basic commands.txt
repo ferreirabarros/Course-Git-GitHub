@@ -20,7 +20,7 @@ git clone <ssh no projeto> => clona o projeto do github
 
 git push => sobe alteração/versão/estagios para o github
 
-git pull => desço/pego/baixo arquivos que eu não tenho do projeto no github para minha maquina
+git pull => desço/pego/baixo arquivos da branch atual que eu não tenho do projeto no github para minha maquina
 
 (Processo de add projeto local no repositorio vazio do github)
 	
@@ -51,12 +51,98 @@ git mv <nome do arquivo> <diretorio/nome do arquivo> => move o arquivo
 
 git checkout <nome do arquivo> => descarta as alterações dos arquivos não rastreados(git add)
 
-git log <nome do arquivo> => visualizar commits no terminal.
+git log => visualizar todos os commits realizados pelo usuario
+
+git log <nome do arquivo> => visualizar commits de um arquivo esquecifico no terminal.
 (letra "q" para sair)
+
+git log --oneline => visualizar commits resumidos 
 
 git config --global user.name "<seu nome>" => configura seu nome o terminal
 
 git confg --global user.email "<seu email>" => configuta seu email o terminal
+
+git help => lista com principais commandos com explicações
+
+git help <command> => explicação detalhada sobre o comanda
+
+git show <4 primeiros digitos do identidicador do commit ou nome da tag > => mostras as mudanças feitas nesse commit/tag
+
+git diff => mostra as alteração de todos arquivos alterados antes do commit
+
+git diff <nome do arquivo> =>  mostra as alteração desse arquivo alterado antes do commit
+
+git diff <codigo abreviado do commit antigo> <codigo abreviado do commit novo> => mostra as aleteração entre dois commits
+
+git checkout <codigo abreviado do commit ou nome da tag> => volta Head/seus arquivos momentaniamente para visualizar para como estavam nesse commit/tag
+ 
+git revert HEAD => reverte/desfaz as alteração do ultimo commit
+( escrever ":" e depois letra "q" para sair)
+
+git revert <codigoabreviado do commit> => reverte/desfaz as alterações deste commit especifico
+(isso pode gerar conflitos que o git não consegue resolver)
+
+git revert --abort => para abortar reversão
+(precisa ser enviado este comando para processo ser finalizado)
+
+git revert --continue => para continuar reversão
+(enviar comando somente depois de resolver voce mesmo o coflito)
+
+git reset HEAD => remove todos  os arquivos do rastreamento(git add) da branch atual
+
+git reset <nome do arquivo> => remove o arquivo do rastreamento(git add) da branch atual
+
+git reset --mixed <codigo do commit> => reset/deleta o commit não removendo as alterações e deixando os arquivos não rastreados
+
+git reset --soft <codigo do commit> =>  reset/deleta o commit não removendo as alterações e deixando os arquivos rastreados.
+
+git stash => salva as alterações feitas desde o ultimo commit em uma stash e apaga essas alteraçoes nos arquivos
+
+git stash push -m "<descrição>" => salva as alterações feitas desde o ultimo commit em uma stash e apaga essas alteraçoes nos arquivos e add descrição na stash
+
+git stash list => lista asstash existentes
+
+git stash show -p <numero da stash> => mostra as alterações da stash
+
+git stash apply <numero da stash> => Volta as alteração salvas nessa stash devolta para os arquivos para assim serem rastriadas
+
+git stash clear => limpa/apaga todas as stash
+
+git stash drop <numero da stash> => Apaga uma stash especifica
+
+git tag => listas todas as tags
+
+git tag -a <nome da tag> -m "<descrição da tag>" => cria uma tag com nome e drecrição
+
+git tag -d <nome da tag> => deletar tag
+
+git push origin <nome da tag> => para sube/empurrar essa tag par o github
+
+git fetch -a => atualiza seu repositorio local com todas as branch e tags do github
+(loga apos esse comando as branch precisão ser "chamdaas" com git checkout <nome da branch>)
+
+git rebase <nome da bransh principal> => faz um merge reorganizando os commit em ordem cronologica
+(rebase deve ser usado apartir sua propria bransh de trabalho)
+(apos isso deve ser feito git merge <nome da sua propria branch de trabalho> apartir na branch principal)
+(só assim os commit serão enviados para git hub na ordem correta)
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
